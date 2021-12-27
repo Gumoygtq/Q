@@ -19,7 +19,8 @@ int main(){
 	int s1=0;
 	int s2=0;
 	int p=0;
-	
+	int num=0;
+	int sum=0;
 	for(int i=100;i<10000;i++){
 		int a=isprime(i);
 		q=q+a;
@@ -40,9 +41,13 @@ int main(){
 		int c=isprime(s2);
 		q=q+c;
 		if(q==3){
+		//	num++;
 			printf("%d ",i);
+			sum=sum+i;
+			num++;
 		}
-		q=0;
-	}
+		q=0;}
+		printf("\n");
+	printf("average=%f",1.0*sum/num);
 	return 0;
 }
